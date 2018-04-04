@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+}
+
+.corpo {
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    padding: 15px 15px;
+}
+
+.scarica,
+.funzionalita,
+.contatti,
+.registrazione,
+.accedi {
+    float: left;
+    padding: 15px 15px;
+    position: absolute;
+    right: 0;
+}
