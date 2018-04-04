@@ -14,6 +14,11 @@
     padding: 15px 15px;
 }
 
+.corpo,
+.logo {
+    background-color: white;
+}
+
 .scarica,
 .funzionalita,
 .contatti,
@@ -53,4 +58,10 @@
     position: absolute;
     bottom: 25px;
     left: 15px;
+}
+
+.footernav {
+    position: absolute;
+    bottom: 25px;
+    left: 25%;
 }
