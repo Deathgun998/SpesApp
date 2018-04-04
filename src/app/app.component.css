@@ -3,11 +3,14 @@
 }
 
 .corpo {
-    width: 100%;
+    width: 30%;
+    float: right;
+    margin-right: 0;
 }
 
 .logo {
-    float: left;
+    width: 70%;
+    position: absolute;
     padding: 15px 15px;
 }
 
@@ -18,6 +21,4 @@
 .accedi {
     float: left;
     padding: 15px 15px;
-    position: absolute;
-    right: 0;
 }
