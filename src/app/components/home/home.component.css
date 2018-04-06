@@ -1,0 +1,19 @@
+.home {
+    background-color: #66ccff;
+}
+.scarica {
+    height: 650px;
+    width: 100%;
+}
+.img {
+    width: 100%;
+    background-image: url(..\..\..\assets\BG_home.jpg) ;
+    
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: cover
+
+}
+.funzionalita {
+    background-color: azure;
+}
