@@ -1,37 +1,3 @@
-.container {
-    width: 100%;
-}
-
-.corpo {
-    width: 40%;
-    float: right;
-    margin-right: 0;
-}
-
-.logo {
-    width: 60%;
-    position: absolute;
-    padding: 15px 15px;
-}
-
-.scarica,
-.funzionalita,
-.contatti,
-.registrazione,
-.accedi {
-    float: left;
-    margin: 25px 15px;
-    font-size: 20px;
-}
-
-.accedi {
-    background-color: #66ccff;
-    color: white;
-    border-radius: 25px;
-    margin-top: 20px;
-    padding: 5px;
-}
-
 .footer {
     width: 100%;
     background-color: steelblue;
