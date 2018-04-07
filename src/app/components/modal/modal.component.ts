@@ -6,25 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
-  
-  
-  list : string = "Spesa al mercato";
-  
+
+
+  confirm_modal: boolean = true;
+  login_modal: boolean = false;
+
+  list: string = "Spesa al mercato";
+
   constructor() { }
 
   ngOnInit() {
   }
 
 
-confirm(){
+  confirm() {
 
-}
+  }
 
-back(){
+  back() {
 
-}
-
-confirm_modal: boolean = true;
-login_modal : boolean = false;
+  }
 
 }
