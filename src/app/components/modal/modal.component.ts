@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ModalComponent implements OnInit {
 
 
-  confirm_modal: boolean = true;
+  confirm_modal: boolean = false;
   login_modal: boolean = false;
+  register_modal: boolean = true;
 
   list: string = "Spesa al mercato";
 
