@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './components/appcomponent/app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderService } from './services/header.service';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [HeaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

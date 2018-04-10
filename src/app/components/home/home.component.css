@@ -18,6 +18,8 @@
     height: 65%;
     padding-bottom: 5%;
     background-color: brown;
+    background-image: url("../../../assets/BG_home.jpg");
+    background-size: 100% 100%;
     color: white;
 }
 .market {
@@ -121,4 +123,34 @@
 }
 .contatti {
     text-align: center;
+}
+.bluearrow {
+    background-color: azure;
+    height: 45px;
+    width: 8%;
+    margin: 0 auto;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px; 
+}
+.bluearrow div{
+    margin: 0 auto;
+    height: auto;
+    width: 26%;
+}
+textarea{
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 40%;
+    height: 40%;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+button{
+    width: 40.5%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    background-color: steelblue;
+    border: none;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif; 
 }
