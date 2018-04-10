@@ -1,0 +1,118 @@
+.corpo {
+    width: auto;
+    float: right;
+    margin-right: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 80px;
+}
+
+.logo {
+    width: auto;
+    position: absolute;
+    padding: 15px 15px;
+}
+
+.liste,
+.ricette,
+.utente {
+    float: left;
+    padding: 30px 15px;
+    font-size: 20px;
+}
+
+.utente {
+    background-color: #66ccff;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.listapresente {
+    width: auto;
+    height: 25px;
+    padding-top: 5px;
+    margin-left: 15px;
+    position: absolute;
+    float: left;
+    top: 80px;
+}
+
+.linea {
+    height: 5px;
+    background-color: yellow;
+}
+
+.contenitorelista {
+    border: 1px solid black;
+    width: 80%;
+    height: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 120px;
+    left: 10%;
+    overflow-y: scroll;
+    background-image: url("assets/home_liste.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aggiungilista {
+    position: absolute;
+    top: 70%;
+    right: 8%;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+.elementi {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+    margin: 20px;
+    opacity: 1;
+}
+
+.listatop {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    margin: 0;
+}
+
+.listabottom {
+    opacity: 0;
+    position: relative;
+    left: 0;
+    top: 60%;
+    width: auto;
+}
+
+.text {
+    background-color: #4CAF50;
+    width: 201px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.elementi:hover .listatop,
+.elementi:hover .listabottom {
+    opacity: 1;
+}
+
+@media screen and (max-width:800) {
+    .corpo {
+        float: left;
+    }
+}

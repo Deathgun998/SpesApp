@@ -1,0 +1,41 @@
+.corpo {
+    width: auto;
+    float: right;
+    margin-right: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.logo {
+    width: auto;
+    position: absolute;
+    padding: 15px 15px;
+}
+
+.scarica,
+.funzionalita,
+.contatti,
+.registrazione,
+.accedi {
+    float: left;
+    margin: 25px 15px;
+    font-size: 20px;
+}
+
+.accedi {
+    background-color: #66ccff;
+    color: white;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+@media screen and (max-width:800) {
+    .corpo {
+        float: left;
+    }
+}
