@@ -4,6 +4,7 @@
     margin-right: 0;
     background-color: white;
     position: fixed;
+    height: 50px;
 }
 .menu {
     float:right;
