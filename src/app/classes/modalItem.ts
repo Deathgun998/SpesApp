@@ -1,18 +1,26 @@
+import { Button } from "../components/modal/modalClass/button";
+import { Textbox } from "../components/modal/modalClass/textBox";
+
 export class modalItem{
-    id: string;
     title: string;
     subtitle: string;
-    confirm: boolean;
-    input: string;
-    
+    confirm: Button;
+    undo : Button;
+    showPhotoAdd : boolean;
+    textboxs : Textbox[];
 
-    constructor(id: string = "", title: string = "", subtitle: string = "", confirm : boolean = null, input: string = ""){
-        this.id = id;
+    constructor(title: string, subtitle : string = "", confirm : Button= null, undo: Button = null, showPhotoAdd = null, textboxs :Textbox[]){
         this.title = title;
         this.subtitle = subtitle;
         this.confirm = confirm;
-        this.input = input;
+        this.undo = undo;
+        this.showPhotoAdd = showPhotoAdd;
+        this.textboxs = textboxs;
+    
     }
 
-
+    setSubtitle(value : string){
+        this.subtitle = this.subtitle;
+    }
+    
 }
