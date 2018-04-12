@@ -76,9 +76,9 @@ export const ListFV: Item[] = [
 export const ListMock: List[] =
 
   [
-    new List(1, "Lista Spesa", "LS", sessionStorage.getItem('username'), ListSpesa),
-    new List(2, "Lista Farmacia", "LF", sessionStorage.getItem('username'), ListFarmacia),
-    new List(3, "Lista Carne", "LC", sessionStorage.getItem('username'), ListCarne),
-    new List(4, "Lista Pesce", "LP", sessionStorage.getItem('username'), ListPesce),
-    new List(5, "Frutta e Verdura", "FV", sessionStorage.getItem('username'), ListFV),
+    new List(0, "Lista Spesa", "LS", sessionStorage.getItem('username'), ListSpesa),
+    new List(1, "Lista Farmacia", "LF", sessionStorage.getItem('username'), ListFarmacia),
+    new List(2, "Lista Carne", "LC", sessionStorage.getItem('username'), ListCarne),
+    new List(3, "Lista Pesce", "LP", sessionStorage.getItem('username'), ListPesce),
+    new List(4, "Frutta e Verdura", "FV", sessionStorage.getItem('username'), ListFV),
   ];

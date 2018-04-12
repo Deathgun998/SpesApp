@@ -12,6 +12,7 @@ import { PrivateareaComponent } from './components/privatearea/privatearea.compo
 import { PortaleRouterModule } from './Routing/router.module';
 import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
 import { MockListService } from './services/mock-list.service';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MockListService } from './services/mock-list.service';
     HomeComponent,
     FooterComponent,
     PrivateareaComponent,
-    PrivateheaderComponent
+    PrivateheaderComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

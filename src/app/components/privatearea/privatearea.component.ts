@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { List } from '../../classes/List';
 import { MockListService } from '../../services/mock-list.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-privatearea',
@@ -12,7 +13,7 @@ export class PrivateareaComponent implements OnInit {
   nOfListe: number;
   liste: List[];
   selectedList: List;
-  constructor(private listService: MockListService) {
+  constructor(private listService: MockListService, private router:Router) {
     
    }
 
@@ -37,6 +38,13 @@ export class PrivateareaComponent implements OnInit {
   delete(list: List){
     this.listService.deleteList(list);
     this.liste = this.listService.getMock("mockedList");
+  }
+  NavigateToDetail(list : List){
+    this.router.navigate(["/dettaglio/"+list.id]);
+  }
+
+  alertTest(){
+    alert("Test");
   }
 
 }
