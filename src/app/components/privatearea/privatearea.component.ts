@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivateareaComponent implements OnInit {
 
+  nOfListe: number = 11;
   constructor() { }
 
   ngOnInit() {
