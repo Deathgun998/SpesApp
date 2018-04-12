@@ -10,27 +10,33 @@ import { MockListService } from '../../services/mock-list.service';
 export class PrivateareaComponent implements OnInit {
 
   nOfListe: number;
-  lista: List = new List("Spesa carne","SC");
   liste: List[];
+  selectedList: List;
   constructor(private listService: MockListService) {
-    this.liste = listService.getLists();
+    
    }
 
   ngOnInit() {
-    this.liste = this.listService.getLists();
+    this.liste = this.listService.getMock("mockedList");
+    
+    console.log(this.liste[0].name);
     this.nOfListe=this.liste.length;
+  }
+
+  setSelectedList(list: List) {
+    this.selectedList = list;
   }
 
   save(name: string, sigla: string){
 
-    this.listService.deleteList(new List(name, sigla));
-    this.liste = this.listService.getLists();
+    this.listService.deleteList(this.liste[0]);
+    this.liste = this.listService.getMock("mockedList");
     alert("Modifiche salvate!");
   }
 
   delete(list: List){
     this.listService.deleteList(list);
-    this.liste = this.listService.getLists();
+    this.liste = this.listService.getMock("mockedList");
   }
 
 }

@@ -7,7 +7,7 @@
       <div class="options">
         <div class="nameop">{{list.name}}</div>
         <div class="icons">
-          <img src="../../../assets/modify.png" data-toggle="modal" data-target="#exampleModal">
+          <img src="../../../assets/modify.png" (click)="setSelectedList(list)" data-toggle="modal" data-target="#exampleModal">
           <img src="../../../assets/send.png" (click)= "send()">
           <img src="../../../assets/delete.png" (click)="delete()">
         </div>
@@ -20,7 +20,7 @@
 
 </div>
 
-<div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position:absolute; z-index: 9999;">
+<div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position:ab solute; z-index: 9999;">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -32,9 +32,9 @@
         <div class="modal-body">
           <form>
             <label>Nome Lista</label>
-            <input type="text" class="form-control" id="formname" value=""><br>
+            <input type="text" class="form-control" id="formname" value="{{selectedList.name}}"><br>
             <label>Sigla Lista</label>
-            <input type="text" class="form-control" id="sigla" value="">
+            <input type="text" class="form-control" id="sigla" value="{{selectedList.sigla}}">
           </form>
         </div>
         <div class="modal-footer">
