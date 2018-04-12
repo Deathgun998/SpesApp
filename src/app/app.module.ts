@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderService } from './services/header.service';
 import { FooterComponent } from './components/footer/footer.component';
-import { UserComponent } from './components/user/user.component';
 import { PrivateareaComponent } from './components/privatearea/privatearea.component';
 import { PortaleRouterModule } from './Routing/router.module';
 import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
@@ -20,7 +19,6 @@ import { PrivateheaderComponent } from './components/privateheader/privateheader
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    UserComponent,
     PrivateareaComponent,
     PrivateheaderComponent
   ],
