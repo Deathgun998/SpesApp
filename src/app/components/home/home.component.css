@@ -1,3 +1,11 @@
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+.spacer {
+    height: 50px;
+}
 .home {
     background-color: #66ccff;
     top:0;
