@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ListComponent } from './components/list/list.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { FormsModule} from '@angular/forms';
+import { ModalDataService } from './services/modalData.service';
 
 
 @NgModule({
@@ -16,9 +18,10 @@ import { ModalComponent } from './components/modal/modal.component';
     ModalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ModalDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
