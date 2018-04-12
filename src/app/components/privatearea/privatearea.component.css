@@ -8,14 +8,14 @@
     padding-top: 60px; 
 }
 .container {
-    height: 400px;
+    height: 500px;
 }
 .lista {
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     display: inline-block;
-    /*margin-right: 20px; 
-    margin-top: 20px;*/
+    margin-right: 20px; 
+    margin-top: 20px;
     background-color: #ff9933;
     text-align: center;
     color: white;
@@ -29,17 +29,17 @@
 }
 .name {
     background-color: #6699ff;
-    margin-top: 49px;
+    margin-top: 53px;
     font-size: 15px;
     height: 30px;
     text-align: center;
 
 }
 .options {
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     background-color: black;
-    z-index: 9999;
+    z-index: 9998;
     visibility: hidden;
     position: absolute;
 }

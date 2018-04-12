@@ -1,11 +1,11 @@
 <app-privateheader></app-privateheader>
 
-<div class="title">Elenco liste della spesa( {{nOfListe}} )</div>
+<div class="title">Elenco liste della spesa ({{nOfListe}}) </div>
 <div class="corpo">
 <div class= "container">
-  <div class="lista">
+  <div class="lista" *ngFor="let list of liste">
       <div class="options">
-        <div class="nameop">{{lista.name}}</div>
+        <div class="nameop">{{list.name}}</div>
         <div class="icons">
           <img src="../../../assets/modify.png" data-toggle="modal" data-target="#exampleModal">
           <img src="../../../assets/send.png" (click)= "send()">
@@ -14,13 +14,13 @@
       
   
     </div>
-    <label>PR</label>
-    <div class="name">{{lista.name}}</div>
+    <label>{{list.sigla}}</label>
+    <div class="name">{{list.name}}</div>
 </div>
 
 </div>
 
-<div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position:absolute; z-index: 9999;">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -32,9 +32,9 @@
         <div class="modal-body">
           <form>
             <label>Nome Lista</label>
-            <input type="text" class="form-control" id="formname" value="{{lista.name}}"><br>
+            <input type="text" class="form-control" id="formname" value=""><br>
             <label>Sigla Lista</label>
-            <input type="text" class="form-control" id="sigla" value="{{lista.sigla}}">
+            <input type="text" class="form-control" id="sigla" value="">
           </form>
         </div>
         <div class="modal-footer">

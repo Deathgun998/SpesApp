@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PrivateareaComponent } from './components/privatearea/privatearea.component';
 import { PortaleRouterModule } from './Routing/router.module';
 import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
+import { MockListService } from './services/mock-list.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { PrivateheaderComponent } from './components/privateheader/privateheader
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [HeaderService],
+  providers: [HeaderService, MockListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
