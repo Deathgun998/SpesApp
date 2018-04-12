@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
   }
 
   scrollToScarica() {
-    this.scarica.nativeElement.scrollIntoView();
+    window.scrollTo(0,0);
   }
   scrollToContatti() {
 
