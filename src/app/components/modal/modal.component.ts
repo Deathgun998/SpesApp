@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { modalItem } from '../../classes/modalItem';
+import { ModalDataService } from '../../services/modalData.service';
 
 @Component({
   selector: 'modal',
@@ -8,24 +10,26 @@ import { Component, OnInit } from '@angular/core';
 export class ModalComponent implements OnInit {
 
 
-  confirm_modal: boolean = false;
-  login_modal: boolean = false;
-  register_modal: boolean = true;
+  email: string;
+  password: string;
 
-  list: string = "Spesa al mercato";
+  @Input()
+  modalData: modalItem;
 
-  constructor() { }
+  // private loginService: LoginService
+  modalDelete: Object;
+  constructor(private modalDataService: ModalDataService) {
+  }
 
   ngOnInit() {
   }
 
-
-  confirm() {
-
+  chargePhoto(){
+    console.log("photooo");
   }
 
-  back() {
-
+  close() {
+    this.modalDataService.hideModal();
   }
 
 }
