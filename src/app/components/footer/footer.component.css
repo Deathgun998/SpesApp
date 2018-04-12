@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    background-color: steelblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20%;
+}
+
+.tornaSu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 92.5%;
+    right: 15px;
+    display: inline-block;
+}
+
+.logofooter {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+}
+
+.footerlink {
+    position: absolute;
+    bottom: 25px;
+    left: 150px;
+}
+
+.seguici {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+}

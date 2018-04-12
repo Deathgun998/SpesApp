@@ -3,7 +3,7 @@ import { EventEmitter } from 'events';
 import { HeaderService } from '../../services/header.service';
 
 @Component({
-  selector: 'header',
+  selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
