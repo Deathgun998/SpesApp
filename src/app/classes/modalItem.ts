@@ -1,7 +1,7 @@
 import { Button } from "../components/modal/modalClass/button";
 import { Textbox } from "../components/modal/modalClass/textBox";
 
-export class modalItem{
+export class ModalItem{
     title: string;
     subtitle: string;
     confirm: Button;

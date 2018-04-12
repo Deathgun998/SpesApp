@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { modalItem } from '../../classes/modalItem';
 import { ModalDataService } from '../../services/modalData.service';
+import { ModalItem } from '../../classes/modalItem';
 
 @Component({
   selector: 'modal',
@@ -14,7 +14,7 @@ export class ModalComponent implements OnInit {
   password: string;
 
   @Input()
-  modalData: modalItem;
+  modalData: ModalItem;
 
   // private loginService: LoginService
   modalDelete: Object;
@@ -24,8 +24,7 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
   }
 
-  chargePhoto(){
-    console.log("photooo");
+  addPhoto(){
   }
 
   close() {
