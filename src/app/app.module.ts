@@ -13,6 +13,8 @@ import { PortaleRouterModule } from './Routing/router.module';
 import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
 import { MockListService } from './services/mock-list.service';
 import { DetailComponent } from './components/detail/detail.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { ModalDataService } from './services/modal-data.service';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { DetailComponent } from './components/detail/detail.component';
     FooterComponent,
     PrivateareaComponent,
     PrivateheaderComponent,
-    DetailComponent
+    DetailComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { DetailComponent } from './components/detail/detail.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [HeaderService, MockListService],
+  providers: [HeaderService, MockListService, ModalDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
