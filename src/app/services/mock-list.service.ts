@@ -50,6 +50,13 @@ export class MockListService {
     this.liste[listIndex].itemList.splice(itemIndex,1);
   }
 
+  updateItem(name:string, quantity:string, item:Item, list:List){
+    let listIndex: number = this.getListIndex(list);
+    let itemIndex: number = this.getItemIndex(item, listIndex);
+    this.liste[listIndex].itemList[itemIndex].name = name;
+    this.liste[listIndex].itemList[itemIndex].quantity =  quantity;
+  }
+
   getItemIndex(item: Item, listIndex:number){
     let index: number = 0;
     let items: Item[] = this.liste[listIndex].itemList;

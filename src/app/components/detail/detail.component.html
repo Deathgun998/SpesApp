@@ -6,7 +6,7 @@
     <div class="item" id="item" *ngFor="let item of itemList; let i of index">
         <div class="options" id="options" [style.visibility]="item.select?'visible':'hidden'">
             <img src="../../../assets/drag_drop.png">
-            <img src="../../../assets/modify.png">
+            <img src="../../../assets/modify.png" (click)="setItem(item)" data-toggle="modal" data-target="#exampleModal">
             <img src="../../../assets/delete.png" (click)="setItem(item)" data-toggle="modal" data-target="#deleteModal" >
             <img src="../../../assets/cancel white.png" style="cursor: pointer" (click)="item.select = false">
         </div>
@@ -55,15 +55,15 @@
             </div>
             <div class="modal-body">
               <form>
-                <label>Nome Lista</label>
-                <input type="text" class="form-control" name="formname" value="{{selectedList.name}}" #formname>
+                <label>Nome Articolo</label>
+                <input type="text" class="form-control" name="formname" value="{{selectedItem.name}}" #formname>
                 <br>
-                <label>Sigla Lista</label>
-                <input type="text" class="form-control" name="sigla" value="{{selectedList.sigla}}" #sigla>
+                <label>Quantità</label>
+                <input type="text" class="form-control" name="quant" value="{{selectedItem.quantity}}" #quant>
 
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button class="btn btn-primary" data-dismiss="modal"  (click)="save(formname.value,sigla.value)">Save changes</button>
+                  <button class="btn btn-primary" data-dismiss="modal"  (click)="save(formname.value,quant.value)">Save changes</button>
                 </div>
               </form>
             </div>
