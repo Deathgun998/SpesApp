@@ -16,7 +16,6 @@ export class ModalComponent implements OnInit {
   @Input()
   modalData: ModalItem;
 
-  // private loginService: LoginService
   modalDelete: Object;
   constructor(private modalDataService: ModalDataService) {
   }

@@ -6,7 +6,7 @@
     <div class="title">{{modalData.title}}
         <div class="closeModal" (click)="close()"></div>
     </div>
-    <div class="text" [innerHtml]="modalData.subtitle"></div>
+    <div class="text" *ngIf="modalData.subtitle" [innerHtml]="modalData.subtitle"></div>
 
 
     <div class="login" *ngFor="let textbox of modalData.textboxs">
