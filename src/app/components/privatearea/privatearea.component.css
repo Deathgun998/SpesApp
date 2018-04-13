@@ -71,4 +71,13 @@ app-privateheader {
 .modify, .send, .delete, .nameop {
     cursor: pointer;
 }
+.addbutton {
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+}
+.addbutton img{
+    height: 100px;
+    width: 100px;
+}
 
