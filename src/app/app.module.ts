@@ -14,6 +14,13 @@ import { PrivateheaderComponent } from './components/privateheader/privateheader
 import { MockListService } from './services/mock-list.service';
 import { DetailComponent } from './components/detail/detail.component';
 import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { ModalDataService } from './services/modal-data.service';
+import { LoginService } from './services/login.service';
+import { GenericServiceService } from './services/generic-service.service';
+import { UrlMockUtilsService } from './services/UrlMockUtils.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UtilityService } from './services/utility.service';
 
 
 @NgModule({
@@ -25,15 +32,22 @@ import { DeleteModalComponent } from './components/delete-modal/delete-modal.com
     PrivateareaComponent,
     PrivateheaderComponent,
     DetailComponent,
-    DeleteModalComponent
+    DeleteModalComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     PortaleRouterModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [HeaderService, MockListService],
+  providers: [HeaderService,
+    MockListService,
+    ModalDataService,
+    LoginService,
+    GenericServiceService,
+    UrlMockUtilsService, UtilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

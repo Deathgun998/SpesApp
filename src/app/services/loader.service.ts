@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject }    from 'rxjs/Subject';
+import { UrlMockUtilsService } from './UrlMockUtils.service';
 
 @Injectable()
 export class LoaderService {

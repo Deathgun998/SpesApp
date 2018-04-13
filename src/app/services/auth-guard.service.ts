@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Subject } from 'rxjs/Subject';
+import { LoginService } from './login.service';
 
 @Injectable()
 export class AuthGuardService implements CanActivate{
@@ -12,22 +13,19 @@ export class AuthGuardService implements CanActivate{
 
   canActivate(nome: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
 
-    if(sessionStorage.getItem("username") != null){
-      this.sectionSelected.next(false);
-      this.router.navigate(["/privateArea"]);
+    if (this.loginService.isLogged()) {
+      return true;
+    } else {
+      this.router.navigate(['home']);
       return false;
     }
-    else{
-      this.sectionSelected.next(true);
-      return true;
-    }
-    }
+  }
 
     logOut() {
       this.sectionSelected.next(false);
     }
 
-  constructor(private router:Router) { 
+  constructor(private loginService: LoginService,private router:Router) { 
     
   }
 

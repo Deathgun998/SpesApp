@@ -37,7 +37,6 @@ export class MockListService {
   }
 
   updateList(name: string, sigla: string, list: List): any {
-    alert(name);
     let index: number= this.getListIndex(list);
     this.liste[index].changeName(name);
     this.liste[index].changeSigla(sigla);

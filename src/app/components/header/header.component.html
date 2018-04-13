@@ -1,12 +1,11 @@
-
-        <img class="logo" src="\assets\logo.png">
+<img class="logo" src="\assets\logo.png">
 <div class="menu">
-    <a class="scarica" (click) = "navigate('scarica')">scarica</a>
+    <a class="scarica" (click)="navigate('scarica')">scarica</a>
 
-        <a class="funzionalita"  (click) = "navigate('funzionalita')">funzionalita</a>
+    <a class="funzionalita" (click)="navigate('funzionalita')">funzionalita</a>
 
 
-        <a class="contatti"  (click) = "navigate('contatti')">contatti</a>
-        <div class="registrazione">registrazione</div>
-        <div class="accedi">accedi</div>
-        </div>
+    <a class="contatti" (click)="navigate('contatti')">contatti</a>
+    <div class="registrazione" (click)="openModalRegister()">registrazione</div>
+    <div class="accedi" (click)="openModalLogin()">accedi</div>
+</div>

@@ -1,9 +1,12 @@
+<img class="logo" src="\assets\logo.png">
+<div class="menu">
 
-        <img class="logo" src="\assets\logo.png">
-        <div class="menu">
-        
-        
-                <div class="liste" routerLink="/privateArea" routerLinkActive="selected">Elenco Liste</div>
-                <div class="ricette">Ricette</div>
-                <div class="utente">Utente</div>
-                </div>
+
+    <div class="liste" routerLink="/privateArea" routerLinkActive="selected">Elenco Liste</div>
+    <div class="ricette">Ricette</div>
+    <div (click)="isProfileClickedFun()" class="utente"><img src="../assets/img_profile.png"></div>
+    <div *ngIf="isProfileClicked" class="profileDiv ">
+
+        <a class="cursor" (click)="doLogout()">Logout</a>
+    </div>
+</div>

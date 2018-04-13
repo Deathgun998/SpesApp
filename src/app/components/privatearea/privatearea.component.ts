@@ -31,7 +31,6 @@ export class PrivateareaComponent implements OnInit {
   save(name: string, sigla: string){
     this.listService.updateList(name, sigla, this.selectedList);
     this.liste = this.listService.getList();
-    alert("Modifiche salvate!");
   }
 
   delete(){
