@@ -1,0 +1,10 @@
+<app-privateheader></app-privateheader>
+<div class="spacer"></div>
+<Div class="title">Articoli</Div>
+<Div class="container">
+    <Div class="item" *ngFor="let item of itemList">
+        <div class="name">{{item.name}}</div>
+        <div class="quant">{{item.quantity}}</div>
+        <img src="../../../assets/more.png">
+    </Div>
+</Div>
