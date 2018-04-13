@@ -25,31 +25,34 @@ export class HeaderComponent implements OnInit {
     new Textbox("", "Password", true, "password", "password")
   ]
 
+
+
+
   constructor(private headerService: HeaderService, private modalService: ModalDataService) { }
 
   ngOnInit() {
   }
 
-  
-
-navigate(anchor: string) {
-  this.anchor = anchor;
-  this.headerService.setAnchor(this.anchor);
-  
-}
 
 
-openModalLogin() {
-  this.modalService.showModal(new ModalItem("Login", null, new Button("Accedi"), null, true, this.textboxsLogin));
-  for (let i = 0; i < this.textboxsLogin.length; i++) {
-    this.textboxsLogin[i].key = null;
+  navigate(anchor: string) {
+    this.anchor = anchor;
+    this.headerService.setAnchor(this.anchor);
+
   }
-}
 
-openModalRegister(){
-this.modalService.showModal(new ModalItem("Register", null, new Button("Registrati"), null, true, this.textboxsRegister));
-for (let i = 0; i < this.textboxsRegister.length; i++) {
-  this.textboxsRegister[i].key = null;
-}
-}
+
+  openModalLogin() {
+    this.modalService.showModal(new ModalItem("Login", null, new Button("Accedi", null), new Button("Annulla", () =>  {this.modalService.hideModal() }), false, this.textboxsLogin));
+    for (let i = 0; i < this.textboxsLogin.length; i++) {
+      this.textboxsLogin[i].key = null;
+    }
+  }
+
+  openModalRegister() {
+    this.modalService.showModal(new ModalItem("Register", null, new Button("Registrati", null), new Button("Annulla",  () =>  {this.modalService.hideModal() }), false, this.textboxsRegister));
+    for (let i = 0; i < this.textboxsRegister.length; i++) {
+      this.textboxsRegister[i].key = null;
+    }
+  }
 }
