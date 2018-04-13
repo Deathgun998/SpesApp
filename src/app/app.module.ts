@@ -13,6 +13,7 @@ import { PortaleRouterModule } from './Routing/router.module';
 import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
 import { MockListService } from './services/mock-list.service';
 import { DetailComponent } from './components/detail/detail.component';
+import { DeleteModalComponent } from './components/delete-modal/delete-modal.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DetailComponent } from './components/detail/detail.component';
     FooterComponent,
     PrivateareaComponent,
     PrivateheaderComponent,
-    DetailComponent
+    DetailComponent,
+    DeleteModalComponent
   ],
   imports: [
     BrowserModule,
