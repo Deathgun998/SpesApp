@@ -17,7 +17,7 @@ export class DetailComponent implements OnInit {
     this.router.params.subscribe(params => {//
       if (params['id'] != '' && params['id'] != null) {
         this.id = Number(params['id']);
-        let lists: List[] = this.listService.getMock("mockedList");
+        let lists: List[] = this.listService.getList();
         this.itemList = lists[this.id].itemList;
       }
     });

@@ -29,8 +29,6 @@ export class PrivateareaComponent implements OnInit {
   }
 
   save(name: string, sigla: string){
-    console.log(JSON.stringify(name));
-    console.log(JSON.stringify(sigla));
     this.listService.updateList(name, sigla, this.selectedList);
     this.liste = this.listService.getList();
     alert("Modifiche salvate!");
@@ -41,7 +39,7 @@ export class PrivateareaComponent implements OnInit {
     this.liste = this.listService.getList();
   }
   NavigateToDetail(list : List){
-    this.router.navigate(["/dettaglio/"+list.id]);
+    this.router.navigate(["/dettaglio/"+this.listService.getListIndex(list)]);
   }
 
   alertTest(){
