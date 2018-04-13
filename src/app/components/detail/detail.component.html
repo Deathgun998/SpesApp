@@ -22,7 +22,7 @@
     </div>
 </div>
 
-
+<ng-container *ngIf="selectedItem != null">
 <div class="modal fade bd-example-modal-sm" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true" style="position:ab solute; z-index: 9999;">
         <div class="modal-dialog" role="document">
@@ -101,4 +101,5 @@
           </div>
         </div>
       </div>
+    </ng-container>
 

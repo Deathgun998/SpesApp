@@ -1,5 +1,6 @@
   <app-privateheader></app-privateheader>
   <div class="spacer"></div>
+  <div class="addbutton" data-toggle="modal" data-target="#insertModal" style="cursor: pointer"><img src="../../../assets/addItem.png"></div>
   <div class="title">Elenco liste della spesa ({{nOfListe}}) </div>
   <div class="corpo">
     <div class="container">
@@ -72,4 +73,43 @@
           </div>
         </div>
       </div>
+
+
     </ng-container>
+
+
+
+
+      <div class="modal fade bd-example-modal-sm" id="insertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="position:ab solute; z-index: 9999;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Inserisci Lista</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label>Nome Lista</label>
+                <input type="text" class="form-control" name="formname"  #formname>
+                <br>
+                <label>Sigla Lista</label>
+                <input type="text" class="form-control" name="sigla"  #sigla>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" data-dismiss="modal"  (click)="insert(formname.value,sigla.value)">Save changes</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
