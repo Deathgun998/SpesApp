@@ -16,18 +16,16 @@
     margin-left: 0px;
 }
 
-.scarica,
-.funzionalita,
-.contatti,
-.registrazione,
-.accedi {
+.liste,
+.ricette,
+.utente {
     float: left;
     margin: 25px 15px;
     font-size: 20px;
     cursor: pointer;
 }
 
-.accedi {
+.utente {
     background-color: #66ccff;
     color: white;
     border-radius: 25px;

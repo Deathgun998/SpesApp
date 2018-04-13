@@ -10,6 +10,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule} from '@angular/forms'
 import { ModalDataService } from './services/modalData.service';
 import { ModalComponent } from './components/modal/modal.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { PrivateareaComponent } from './components/privatearea/privatearea.component';
+import { PrivateheaderComponent } from './components/privateheader/privateheader.component';
+import { MockListService } from './services/mock-list.service';
+import { AuthGuardService } from './services/auth-guard.service';
 
 
 @NgModule({
@@ -18,14 +23,17 @@ import { ModalComponent } from './components/modal/modal.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    DetailComponent,
+    PrivateareaComponent,
+    PrivateheaderComponent
     
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [HeaderService, ModalDataService],
+  providers: [HeaderService, ModalDataService, MockListService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

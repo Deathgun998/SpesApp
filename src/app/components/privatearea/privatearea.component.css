@@ -1,0 +1,87 @@
+app-privateheader {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.spacer {
+    height: 83px;
+}
+
+.title {
+    background-color: papayawhip;
+}
+
+.corpo {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+}
+
+.container {
+    height: 500px;
+}
+
+.lista {
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #ff9933;
+    text-align: center;
+    color: white;
+}
+
+.lista label {
+    position: relative;
+    font-size: 30px;
+    top: 40px;
+    color: white;
+    text-align: center;
+}
+
+.name {
+    background-color: #6699ff;
+    margin-top: 53px;
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+}
+
+.options {
+    height: 130px;
+    width: 130px;
+    background-color: black;
+    z-index: 9998;
+    visibility: hidden;
+    position: absolute;
+}
+
+.lista:hover .options {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.lista:hover .name {
+    visibility: hidden;
+}
+
+.nomeop {
+    margin-top: 0px;
+    font-size: 5px;
+    height: 30px;
+    text-align: center;
+}
+
+.icons {
+    margin-top: 65px;
+    height: 30px;
+}
+
+.modify,
+.send,
+.delete,
+.nameop {
+    cursor: pointer;
+}

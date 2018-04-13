@@ -1,30 +1,14 @@
-export class Item {
-
-    private name: String;
-    private id: String;
-    private category: String;
-
-
-    constructor(id: String, name: String, category: String) {
+export class Item{
+    id: number;
+    imgUrl: string;
+    name:string;
+    quantity:string;
+    buyed:boolean;
+    constructor(id:number, imgUrl:string, name:string, quantity:string, buyed:boolean){
         this.id = id;
+        this.imgUrl = imgUrl;
         this.name = name;
-        this.category = category;
-
+        this.quantity = quantity;
+        this.buyed = buyed;
     }
-
-    getId(): String {
-        return this.id;
-    }
-    setName(name: String) {
-        this.name = name;
-    }
-
-    getName(): String {
-        return this.name;
-    }
-
-    getCategory():String{
-        return this.category;
-    }
-
 }

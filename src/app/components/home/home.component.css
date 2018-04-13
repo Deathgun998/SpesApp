@@ -1,17 +1,29 @@
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.spacer {
+    height: 50px;
+}
+
 .home {
     background-color: #66ccff;
-    top:0;
+    top: 0;
     width: 100%
 }
-.scarica { 
+
+.scarica {
     height: auto;
     bottom: 0;
     padding-bottom: 3%;
-    
 }
+
 .scarica h1 {
     font-size: 300%;
 }
+
 .img {
     padding-top: 2%;
     width: 100%;
@@ -22,74 +34,84 @@
     background-size: 100% 100%;
     color: white;
 }
+
 .market {
     color: white;
     margin-top: 5%;
     margin-left: 15%;
-    margin-right: 55%; 
+    margin-right: 55%;
 }
+
 .marketimg {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
 .scaricatext {
     margin-left: 15%;
     margin-right: 55%;
 }
-.phone{
+
+.phone {
     right: 10%;
     height: 100%;
     width: 30%;
-    
 }
+
 .phone img {
     width: 100%;
-    top:0px;
+    top: 0px;
     height: 100vh;
 }
+
 .funzionalita {
     background-color: azure;
     height: auto;
     padding-bottom: 2%;
 }
+
 .whitearrow {
     background-color: #66ccff;
     height: 45px;
     width: 8%;
     margin: 0 auto;
     border-bottom-left-radius: 120px;
-    border-bottom-right-radius: 120px; 
+    border-bottom-right-radius: 120px;
 }
-.whitearrow div{
+
+.whitearrow div {
     margin: 0 auto;
     height: auto;
     width: 26%;
 }
+
 .scopri {
     text-align: center;
     margin-top: 4%;
 }
+
 .scopri h2 {
     text-align: center;
 }
+
 .tutorial {
-    
     height: 100%;
     width: 100%;
     padding: 0px;
 }
-.tutleft{
+
+.tutleft {
     display: inline-block;
     height: 100%;
     width: 49.75%;
-    margin-right: 0px; 
+    margin-right: 0px;
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: right;
 }
-.tutright { 
-    
-    display: inline-block; 
+
+.tutright {
+    display: inline-block;
     height: 100%;
     width: 49.75%;
     margin-right: 0px;
@@ -97,60 +119,64 @@
     padding-bottom: 3%;
     text-align: left;
 }
-.tut1 {
 
+.tut1 {
     padding-left: 35%;
     height: 50%;
-    padding-right: 5% 
+    padding-right: 5%
 }
-.tut2 {
 
+.tut2 {
     padding-left: 35%;
     height: 50%;
     padding-right: 5%;
 }
-.tut3 {
 
+.tut3 {
     padding-right: 35%;
     padding-left: 5%;
     height: 50%;
 }
+
 .tut4 {
     padding-right: 38%;
     padding-left: 5%;
     height: 50%;
-
 }
+
 .contatti {
     text-align: center;
 }
+
 .bluearrow {
     background-color: azure;
     height: 45px;
     width: 8%;
     margin: 0 auto;
     border-bottom-left-radius: 120px;
-    border-bottom-right-radius: 120px; 
+    border-bottom-right-radius: 120px;
 }
-.bluearrow div{
+
+.bluearrow div {
     margin: 0 auto;
     height: auto;
     width: 26%;
 }
-textarea{
+
+textarea {
     margin-left: 1%;
     margin-top: 2%;
     width: 40%;
     height: 40%;
     font-family: 'Open Sans', sans-serif;
-    
 }
-button{
+
+button {
     width: 40.5%;
     margin-bottom: 3%;
     margin-left: 1%;
     background-color: steelblue;
     border: none;
     height: 30px;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
