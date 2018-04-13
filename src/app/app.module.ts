@@ -15,6 +15,11 @@ import { MockListService } from './services/mock-list.service';
 import { DetailComponent } from './components/detail/detail.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { ModalDataService } from './services/modal-data.service';
+import { LoginService } from './services/login.service';
+import { GenericServiceService } from './services/generic-service.service';
+import { UrlMockUtilsService } from './services/UrlMockUtils.service';
+import { HttpClientModule } from '@angular/common/http';
+import { UtilityService } from './services/utility.service';
 
 
 @NgModule({
@@ -32,9 +37,15 @@ import { ModalDataService } from './services/modal-data.service';
     BrowserModule,
     PortaleRouterModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [HeaderService, MockListService, ModalDataService],
+  providers: [HeaderService,
+    MockListService,
+    ModalDataService,
+    LoginService,
+    GenericServiceService,
+    UrlMockUtilsService, UtilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
