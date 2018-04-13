@@ -18,7 +18,7 @@ export class PrivateareaComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.liste = this.listService.getMock("mockedList");
+    this.liste = this.listService.getList();
     
     console.log(this.liste[0].name);
     this.nOfListe=this.liste.length;
@@ -29,18 +29,17 @@ export class PrivateareaComponent implements OnInit {
   }
 
   save(name: string, sigla: string){
-
-    this.listService.deleteList(this.liste[0]);
-    this.liste = this.listService.getMock("mockedList");
+    this.listService.updateList(name, sigla, this.selectedList);
+    this.liste = this.listService.getList();
     alert("Modifiche salvate!");
   }
 
-  delete(list: List){
-    this.listService.deleteList(list);
-    this.liste = this.listService.getMock("mockedList");
+  delete(){
+    this.listService.deleteList(this.selectedList);
+    this.liste = this.listService.getList();
   }
   NavigateToDetail(list : List){
-    this.router.navigate(["/dettaglio/"+list.id]);
+    this.router.navigate(["/dettaglio/"+this.listService.getListIndex(list)]);
   }
 
   alertTest(){

@@ -1,16 +1,47 @@
 import { Injectable } from '@angular/core';
 import { List } from '../classes/List';
 import { Item } from '../classes/Item';
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Injectable()
 export class MockListService {
 
-  constructor() { 
 
+  
+  liste:List[];
+
+  constructor() { 
+    this.liste = this.getMock("mockedList");
   }
 
   deleteList(list: List) {
-    //remove
+    let ind: number = this.getListIndex(list);
+    this.liste.splice(ind,1);
+  }
+
+  getList(): List[]{
+    return this.liste;
+  }
+
+  getListIndex(list:List): number{
+    let index: number = 0;
+    for(let lista of this.liste){
+
+      if (lista.id == list.id){
+        return index;
+      }
+      index++;
+    }
+
+    return null;
+  }
+
+  updateList(name: string, sigla: string, list: List): any {
+    alert(name);
+    let index: number= this.getListIndex(list);
+    this.liste[index].changeName(name);
+    this.liste[index].changeSigla(sigla);
+
   }
 
 
