@@ -13,4 +13,11 @@ export class List{
         this.user = user;
         this.itemList = itemList;
     }
+
+    changeName(name: string){
+        this.name = name;
+    }
+    changeSigla(sigla: string){
+        this.sigla = sigla;
+    }
 }
