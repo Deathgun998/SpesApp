@@ -44,3 +44,12 @@ app-privateheader {
 .quant {
     width: 15%;
 }
+.addbutton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.addbutton img{
+    height: 100px;
+    width: 100px;
+}

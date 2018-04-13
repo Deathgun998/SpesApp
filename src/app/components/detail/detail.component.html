@@ -1,19 +1,20 @@
 <app-privateheader></app-privateheader>
 <div class="spacer"></div>
+<div class="addbutton" data-toggle="modal" data-target="#insertModal" style="cursor: pointer"><img src="../../../assets/addItem.png"></div>
 <div class="title">Articoli</div>
 <div class="container">
 
     <div class="item" id="item" *ngFor="let item of itemList; let i of index">
         <div class="options" id="options" [style.visibility]="item.select?'visible':'hidden'">
             <img src="../../../assets/drag_drop.png">
-            <img src="../../../assets/modify.png" (click)="setItem(item)" data-toggle="modal" data-target="#exampleModal">
-            <img src="../../../assets/delete.png" (click)="setItem(item)" data-toggle="modal" data-target="#deleteModal" >
+            <img src="../../../assets/modify.png" style="cursor: pointer" (click)="setItem(item)" data-toggle="modal" data-target="#exampleModal">
+            <img src="../../../assets/delete.png" style="cursor: pointer" (click)="setItem(item)" data-toggle="modal" data-target="#deleteModal" >
             <img src="../../../assets/cancel white.png" style="cursor: pointer" (click)="item.select = false">
         </div>
         <div>
             <div class="name">{{item.name}}</div>
             <div class="quant">{{item.quantity}}</div>
-            <img src="../../../assets/more.png" (click)="showOptions(item)">
+            <img src="../../../assets/more.png" (click)="showOptions(item)" style="cursor: pointer">
         </div>
 
         
@@ -64,6 +65,35 @@
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   <button class="btn btn-primary" data-dismiss="modal"  (click)="save(formname.value,quant.value)">Save changes</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade bd-example-modal-sm" id="insertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="position:ab solute; z-index: 9999;">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Inserisci Articolo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label>Nome Articolo</label>
+                <input type="text" class="form-control" name="formname"  #formname>
+                <br>
+                <label>Quantità</label>
+                <input type="text" class="form-control" name="quant"  #quant>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button class="btn btn-primary" data-dismiss="modal"  (click)="insertItem(formname.value,quant.value)">Save changes</button>
                 </div>
               </form>
             </div>

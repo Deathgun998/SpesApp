@@ -47,6 +47,11 @@ export class DetailComponent implements OnInit {
      this.itemList = this.listService.getList()[this.id].itemList;
    }
 
+   insertItem(name: string, quantity: string){
+     this.listService.insertItem(name, quantity, this.list);
+     this.itemList = this.listService.getList()[this.id].itemList;
+   }
+
   ngOnInit() {
     
   }
