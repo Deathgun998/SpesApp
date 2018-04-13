@@ -16,6 +16,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+
   anchor: string;
   textboxsLogin: Textbox[] = [
     new Textbox("", "Email", true, "email", "text"),
@@ -75,7 +76,6 @@ export class HeaderComponent implements OnInit {
 
 
   }
-
 
 
 }
